@@ -1,0 +1,104 @@
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+.output-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: 0 auto;
+    /* Center the output container horizontally */
+    margin-top: 20px;
+    /* Adjust top margin as needed */
+}
+
+h2 {
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+}
+
+#output {
+    color: black;
+    /* Set text color to black for better readability */
+}
+
+.container {
+    background-image: url('https://media.istockphoto.com/id/1409640901/vector/doctors-analyze-the-patients-heart-lungs-and-brain-for-treatment-on-virtual-interface-on.jpg?s=1024x1024&w=is&k=20&c=Z-uATyIDuxXsUB_VmwsNJvni-bhEn8hkpYJr-ZI6Bzo=');
+    /* URL of your image */
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the background image */
+    padding: 20px;
+    /* Add padding to the container */
+    color: black;
+    /* Set text color to white for better readability */
+}
+
+.side-image {
+    float: right;
+    /* Float the image to the right */
+    margin-left: 20px;
+    width: 300px;
+    height: auto;
+    /* Add some margin to the left for spacing */
+}
+
+
+/* CSS */
+.button-1 {
+    background-color: #4e2575;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+    background-color: #4e2575;
+}

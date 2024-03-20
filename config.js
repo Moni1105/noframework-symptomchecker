@@ -1,0 +1,2 @@
+const MY_APIKEY="1d8a8a4297msh04d301ae5885effp1a553ajsn8008481a4a13"
+export{MY_APIKEY}
