@@ -47,27 +47,38 @@ h2 {
     /* Set text color to black for better readability */
 }
 
-.container {
-    background-image: url('https://media.istockphoto.com/id/1409640901/vector/doctors-analyze-the-patients-heart-lungs-and-brain-for-treatment-on-virtual-interface-on.jpg?s=1024x1024&w=is&k=20&c=Z-uATyIDuxXsUB_VmwsNJvni-bhEn8hkpYJr-ZI6Bzo=');
-    /* URL of your image */
-    background-size: cover;
-    /* Cover the entire container */
-    background-position: center;
-    /* Center the background image */
-    padding: 20px;
-    /* Add padding to the container */
-    color: black;
-    /* Set text color to white for better readability */
+.button-2 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.side-image {
-    float: right;
-    /* Float the image to the right */
-    margin-left: 20px;
-    width: 300px;
-    height: auto;
-    /* Add some margin to the left for spacing */
+.button-2:hover,
+.button-2:focus {
+  background-color: #F082AC;
 }
+
 
 
 /* CSS */
@@ -101,4 +112,48 @@ h2 {
 .button-1:hover,
 .button-1:focus {
     background-color: #4e2575;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+.left-container {
+    width: 48%; /* Adjust as needed */
+}
+.right-container {
+    width: 48%; /* Adjust as needed */
+}
+label {
+    font-weight: bold;
+    display: block; /* Ensures labels appear on their own line */
+    margin-bottom: 5px; /* Adds some space between labels */
+}
+
+/* Style for select element */
+select {
+    width: 40%; /* Makes the select element full-width */
+    padding: 8px; /* Adds padding for better appearance */
+    border-radius: 4px; /* Adds rounded corners */
+    border: 2px solid #591769; /* Adds a border */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    margin-bottom: 10px; /* Adds some space between elements */
+}
+
+/* Style for input element */
+textarea{
+    padding: 8px; /* Adds padding for better appearance */
+    border-radius: 4px; /* Adds rounded corners */
+    border: 2px solid #591769; /* Adds a border */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    margin-bottom: 10px; /* Adds some space between elements */
+}
+input[type="number"] {
+    width: 40%; /* Makes the input element full-width */
+    padding: 8px; /* Adds padding for better appearance */
+    border-radius: 4px; /* Adds rounded corners */
+    border: 2px solid #591769; /* Adds a border */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    margin-bottom: 10px; /* Adds some space between elements */
 }

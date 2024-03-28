@@ -1,4 +1,5 @@
-import { MY_APIKEY } from "../scripts/config";
+//import { ()MY_APIKEY } from "../scripts/config";
+//console.log(MY_APIKEY);
 async function fetchData() {
     const symptoms = document.getElementById('symptoms').value.trim(); // Get the value of the symptoms textarea
 
