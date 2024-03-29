@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Healthcare Information Portal</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
+
 <body>
+    <a class="github-link" href="https://github.com/Moni1105/noframework-symptomchecker">
+        Please click here to access Github repository link for this implementation
+    </a>
     <script src="scripts/symptomcheck.js" defer></script>
     <script src="scripts/health.js" defer></script>
     <header>
@@ -52,27 +57,114 @@
                 <input type="number" id="age" name="age" min="1" max="150"><br><br>
                 <button class="button-1" onclick="fetchHealthData()">Fetch Health Data</button>
                 <br><br>
-                <div class="output-container" id="healthInfoOutput" >
+                <div class="output-container" id="healthInfoOutput">
+                    <h2>Health data results</h2>
                     <h3 id="healthheading"></h3>
                     <div id="healthInfoText"></div>
                 </div>
             </div>
+            <div class="implementation-description">
+                <h2>Application Description:</h2>
+                <ul>
+                    <li>
+                        <b>Application Description:</b> This application provides two
+                        functional services: Symptom Checker and General Health
+                        Information, located on the left side of this HTML page.
+                    </li>
+                    <li>
+                        The <b>Symptom Checker</b> functionality aims to diagnose possible
+                        diseases and situations that may be encountered by a patient based
+                        on the symptoms provided by the user.
+                    </li>
+                    <li>
+                        The <b>General Health Information</b> functionality provides
+                        US-based preventive measures, healthcare information, questions to
+                        ask a doctor, and a list of tests that should be done by a person
+                        based on the user's gender and age.
+                    </li>
+                </ul>
+            </div>
         </div>
+
 
         <div class="right-container">
             <!-- Implementation Description -->
             <div class="implementation-description">
                 <h2>Implementation Description:</h2>
-                <p>Add your implementation description here...</p>
+                <ul>
+                    <li>
+                        <b>Strategy:</b> Implementing the integration of external APIs
+                        within a no framework browser solution.
+                    </li>
+                    <li><b>Framework:</b> No framework, only HTML,JS and CSS files</li>
+                    <li>
+                        <b>External APIs used:</b> SymptomChecker (Rapid API) and
+                        HealthFinder (Gov Free API)
+                    </li>
+                    <li><b>API Integration:</b> Javascript Fetch function </li>
+                    <li>
+                        <b>Filezilla:</b> To share this application with others
+                    </li>
+                    <li>
+                        <b>Symptom Checker:</b> If you click on symptom checker button on
+                        left side. It opens the block showing input box for user to enter
+                        thier symptoms, when user click on "check results" button,
+                        performs th api(symptom_checker) call and fetch the response to
+                        user. Clear button will clear output results and user input.
+                    </li>
+                    <li>
+                        <b>General Health Information:</b> If you click on General Health
+                        Information button on left side. Allows user to enter information
+                        about gender and age , when user click on "fetch Health data"
+                        button, performs th api(Health Finder) call and display the
+                        response to user. Clear button will clear output results and user
+                        input.
+                    </li>
+                </ul>
             </div>
+
 
             <!-- Client-Server Architecture Diagram -->
             <div class="client-server-architecture-diagram">
                 <h2>Client-Server Architecture Diagram:</h2>
-                <!--<img src="path_to_your_diagram_image.jpg" alt="Client-Server Architecture Diagram">-->
+                <img src="Noframework_diagram.png" alt="Client-Server Architecture Diagram" width="500" height="400">
             </div>
         </div>
     </div>
+
+    <table>
+        <tr>
+          <th>Topics</th>
+          <th>Project findings</th>
+        </tr>
+        <tr>
+          <td>Ease of Developing</td>
+          <td>
+            <strong>Pros:</strong> This is pretty easy because no framework just folder with HTML, css and  Js files. This is completly browser side solution.
+            <br /><strong>Cons:</strong> Though it is easy for setting up, real trouble was checking out various startegies to hide API key and I struck with the point that no framework - browser web application cannot hide any details of its files. 
+            So when we integrate APIs to this solution, creates serious security concerns. For Python and Vue frameworks I have acheived API key masking by using dotenv modules which helps to save API key in env file and when host on render.com will add it to the settings.
+          </td>
+        </tr>
+        <tr>
+          <td>Developer Community Support</td>
+          <td>
+            Very easy to find support because pretty basic.
+          </td>
+        </tr>
+        <tr>
+          <td>Error Handling and Debugging</td>
+          <td>
+            I did error handling and debugging through chrome console. Nothing much attractive Strategy.
+          </td>
+        </tr>
+        <tr>
+          <td>API Integration Details</td>
+          <td>
+            In browser side js file we can integrate apis with Fetch method and direct httpclient request method.<br/>
+            I have used fetch API calls to implement integration calls.
+          </td>
+        </tr>
+      </table>
 
     <script>
         function showSymptomChecker() {
@@ -85,10 +177,11 @@
             document.getElementById("healthInformation").style.display = "block";
         }
     </script>
-     
-   
-   
 
-    
+
+
+
+
 </body>
+
 </html>

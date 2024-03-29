@@ -13,7 +13,7 @@ async function fetchData() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'X-RapidAPI-Key': process.env.MY_APIKEY,
+            'X-RapidAPI-Key': '47ccf411a7msh8e11f85f64ef79ap15fe54jsn38fb56bc5f45',
             'X-RapidAPI-Host': 'symptom-checker4.p.rapidapi.com'
         },
         body: JSON.stringify({

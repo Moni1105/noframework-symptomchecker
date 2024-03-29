@@ -1,15 +1,15 @@
 body {
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
-}
-
-.output-container {
+  }
+  
+  .output-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -19,78 +19,44 @@ body {
     /* Center the output container horizontally */
     margin-top: 20px;
     /* Adjust top margin as needed */
-}
-
-h2 {
+  }
+  
+  h2 {
     color: #333;
-}
-
-.section {
+  }
+  
+  .section {
     margin-bottom: 20px;
-}
-
-.section h3 {
+  }
+  
+  .section h3 {
     margin-bottom: 10px;
-}
-
-.section ul {
+  }
+  
+  .section ul {
     list-style-type: none;
     padding-left: 0;
-}
-
-.section ul li {
+  }
+  
+  .section ul li {
     margin-bottom: 5px;
-}
-
-#output {
+  }
+  
+  #output {
     color: black;
     /* Set text color to black for better readability */
-}
-
-.button-2 {
-  background-color: #EA4C89;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-2:hover,
-.button-2:focus {
-  background-color: #F082AC;
-}
-
-
-
-/* CSS */
-.button-1 {
-    background-color: #4e2575;
+  }
+  
+  .button-2 {
+    background-color: #ea4c89;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
     font-size: 14px;
     font-weight: 500;
     height: 40px;
@@ -107,53 +73,119 @@ h2 {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-}
-
-.button-1:hover,
-.button-1:focus {
+  }
+  
+  .button-2:hover,
+  .button-2:focus {
+    background-color: #f082ac;
+  }
+  
+  /* CSS */
+  .button-1 {
     background-color: #4e2575;
-}
-.container {
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-1:hover,
+  .button-1:focus {
+    background-color: #4e2575;
+  }
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-}
-.left-container {
+  }
+  .left-container {
     width: 48%; /* Adjust as needed */
-}
-.right-container {
+  }
+  .right-container {
     width: 48%; /* Adjust as needed */
-}
-label {
+  }
+  label {
     font-weight: bold;
     display: block; /* Ensures labels appear on their own line */
     margin-bottom: 5px; /* Adds some space between labels */
-}
-
-/* Style for select element */
-select {
+  }
+  
+  /* Style for select element */
+  select {
     width: 40%; /* Makes the select element full-width */
     padding: 8px; /* Adds padding for better appearance */
     border-radius: 4px; /* Adds rounded corners */
     border: 2px solid #591769; /* Adds a border */
     box-sizing: border-box; /* Ensures padding and border are included in width */
     margin-bottom: 10px; /* Adds some space between elements */
-}
-
-/* Style for input element */
-textarea{
+  }
+  
+  /* Style for input element */
+  textarea {
     padding: 8px; /* Adds padding for better appearance */
     border-radius: 4px; /* Adds rounded corners */
     border: 2px solid #591769; /* Adds a border */
     box-sizing: border-box; /* Ensures padding and border are included in width */
     margin-bottom: 10px; /* Adds some space between elements */
-}
-input[type="number"] {
+  }
+  input[type="number"] {
     width: 40%; /* Makes the input element full-width */
     padding: 8px; /* Adds padding for better appearance */
     border-radius: 4px; /* Adds rounded corners */
     border: 2px solid #591769; /* Adds a border */
     box-sizing: border-box; /* Ensures padding and border are included in width */
     margin-bottom: 10px; /* Adds some space between elements */
+  }
+  .implementation-description ul {
+    list-style-type: disc; /* Use disc for bullet points */
+    margin-left: 20px; /* Adjust margin for indentation */
+  }
+  
+  .implementation-description li {
+    margin-bottom: 5px; /* Adjust margin between items */
+    text-align: left;
+  }
+  
+  table {
+    border: 1px solid #591769;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #591769;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #ea4c89;
+    font-weight: bold;
+  }
+  .github-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
+  
