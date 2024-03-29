@@ -1,5 +1,5 @@
 
-//console.log(MY_APIKEY);
+
 async function fetchData() {
     const symptoms = document.getElementById('symptoms').value.trim(); // Get the value of the symptoms textarea
 
@@ -12,7 +12,7 @@ async function fetchData() {
     const options = {
         method: 'POST',
         headers: {
-            'content-type': 'application/json',
+            'Content-Type': 'application/json',
             'X-RapidAPI-Key': process.env.MY_APIKEY,
             'X-RapidAPI-Host': 'symptom-checker4.p.rapidapi.com'
         },
@@ -23,6 +23,9 @@ async function fetchData() {
 
     try {
         const response = await fetch(url, options);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
         const result = await response.json();
         console.log(result);
 
@@ -40,7 +43,8 @@ async function fetchData() {
             followupQuestionsDiv.innerHTML += `<p>${question}</p>`;
         });
     } catch (error) {
-        console.error(error);
+        console.error('Error fetching data:', error.message);
+        alert('Error fetching data. Please try again later.');
     }
 }
 
@@ -48,5 +52,4 @@ function clearFields() {
     document.getElementById('symptoms').value = ''; // Clear the textarea
     document.getElementById('potentialCauses').innerHTML = ''; // Clear the potentialCauses div
     document.getElementById('followupQuestions').innerHTML = ''; // Clear the followupQuestions div
-    // document.getElementById('symptomsResult').innerHTML = ''; // Clear the symptomsResult div
 }
