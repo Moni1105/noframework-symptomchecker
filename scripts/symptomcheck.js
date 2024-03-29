@@ -1,4 +1,4 @@
-//import { ()MY_APIKEY } from "../scripts/config";
+
 //console.log(MY_APIKEY);
 async function fetchData() {
     const symptoms = document.getElementById('symptoms').value.trim(); // Get the value of the symptoms textarea
@@ -13,7 +13,7 @@ async function fetchData() {
         method: 'POST',
         headers: {
             'content-type': 'application/json',
-            'X-RapidAPI-Key': MY_APIKEY,
+            'X-RapidAPI-Key': process.env.MY_APIKEY,
             'X-RapidAPI-Host': 'symptom-checker4.p.rapidapi.com'
         },
         body: JSON.stringify({
